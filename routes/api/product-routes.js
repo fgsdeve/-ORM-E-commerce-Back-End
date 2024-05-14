@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const { model, where } = require('../../config/connection');
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
@@ -79,7 +78,6 @@ router.post('/', async (req, res) => {
 
 // update product
 router.put('/:id', async (req, res) => {
-   // update product data
    try{
   await Product.update(req.body, {
     where: {
@@ -102,7 +100,6 @@ router.put('/:id', async (req, res) => {
      };
   });
 
-            // figure out which ones to remove
       const productTagsToRemove = existingProductTags
           .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
           .map(({ id }) => id);
