@@ -61,5 +61,9 @@ Express.js Documentation: Official documentation for building applications with 
 PostgreSQL Documentation: Detailed information on PostgreSQL installation, configuration, and usage.
 Full-Stack Blog: Guidance on creating a video submission and additional learning resources for full-stack development.
 
+Author
+This tutorial was created by [FGSDEVE]. You can find more of my work on my GitHub profile "https://github.com/fgsdeve". 
+Awalke through video: https://drive.google.com/file/d/1X5k0qkUwdLqa2xZMXTWqcvswJjYST9qI/view?usp=drive_link
+
 License
 This project is licensed under the MIT License.
